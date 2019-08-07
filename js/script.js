@@ -1,5 +1,6 @@
-
+  function playGame(playerInput) {
   
+    console.log('Gracz wpisał: ' + playerInput);  
   
   let randomNumber = Math.floor(Math.random() * 3 + 1);
   
@@ -16,7 +17,7 @@
 
     } else if (argMoveId == 3) {
       return 'nożyce';
-      
+
     } else { printMessage('Nie znam ruchu o id ' + argMoveId + '.');
       return 'nieznany ruch';
     }
@@ -95,7 +96,33 @@
   
   displayResult(argComputerMove, argPlayerMove);
   
- 
+}
+  playGame(3);
+
+  function buttonClicked() {
+    printMessage('Kamień');
+  }
   
+  let testButton = document.getElementById('play-rock');
+
+  play-rock.addEventListener('click', buttonClicked);
+
+  function buttonClicked() {
+    printMessage('Papier');
+  }
+  
+  let testButton = document.getElementById('play-paper');
+
+
+  play-paper.addEventListener('click', buttonClicked);
+
+  function buttonClicked() {
+    printMessage('Nożyce');
+  }
+  
+  let testButton = document.getElementById('play-scissors');
+
+  play-scissors.addEventListener('click', buttonClicked);
+
   
   
