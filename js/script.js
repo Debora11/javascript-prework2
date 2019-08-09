@@ -67,33 +67,16 @@
   
   console.log('moves:', argComputerMove, argPlayerMove);
   
-  if ( argComputerMove == 'kamień' && argPlayerMove == 'papier') {
+  if ( argComputerMove == argPlayerMove) {
+    printMessage('Remis!');
+  } else if ( argComputerMove == 'kamień' && argPlayerMove == 'papier') {
+    printMessage('Ty wygrywasz!');
+  } else if ( argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
+    printMessage('Ty wygrywasz!');
+  } else if ( argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
     printMessage('Ty wygrywasz!');
   } else {
-    printMessage('Tym razem przegrywasz');
-  }
-  
-  if ( argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
-    printMessage('Ty wygrywasz!');
-  } else {
-    printMessage('Tym razem przegrywasz');
-  }
-  
-  if ( argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
-    printMessage('Ty wygrywasz!');
-  } else {
-    printMessage('Tym razem przegrywasz');
-  }
-  
-  if ( argComputerMove == 'kamień' && argPlayerMove == 'kamień') {
-    printMessage('Remis!');
-  } 
-  
-  if ( argComputerMove == 'papier' && argPlayerMove == 'papier') {
-    printMessage('Remis!');
-  }
-  if ( argComputerMove == 'nożyce' && argPlayerMove == 'nożyce' ) {
-    printMessage('Remis!');
+    printMessage('Przegrywasz');
   }
 }
   
