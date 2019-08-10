@@ -1,5 +1,5 @@
   function playGame(playerInput) {
-          clearMessages();
+    clearMessages ();  
   
     console.log('Gracz wpisał: ' + playerInput);  
   
@@ -9,7 +9,7 @@
   
   let computerMove = getMoveName(randomNumber);
 
-  let playerMove = getMoveName(randomNumber);
+  let playerMove = getMoveName(playerInput);
 
   function getMoveName(argMoveId) {
     if (argMoveId == 1) {
